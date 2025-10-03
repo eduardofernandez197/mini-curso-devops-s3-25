@@ -70,4 +70,4 @@ jobs:
       - name: Copiar arquivos para S3 e fazer o SYNC
         run: |
           set -e 
-          aws s3 sync mini-curso-devops/dist s3://$S3_NAME/ --delete --region $AWS_REGION
+          aws s3 sync mini-curso-devops/dist s3://$S3_NAME --delete --region $AWS_REGION
