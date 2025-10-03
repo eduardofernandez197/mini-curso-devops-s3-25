@@ -7,7 +7,7 @@ on:
 
 env:
   AWS_REGION: 'us-east-1'
-  S3_NAME: "mini-curso-devops"
+  S3_NAME: "mini-curso-devops-ecf"
   S3_PREFIX: "/"
   AWS_WEB_IDENTITY_TOKEN_FILE: "/tmp/gitlab_token"
 
@@ -59,7 +59,7 @@ jobs:
         uses: actions/download-artifact@v4
         with: 
           name: dist-files
-          path: dist 
+          path: mini-curso-devops/dist
 
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
