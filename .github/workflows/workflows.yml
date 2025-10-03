@@ -7,7 +7,7 @@ on:
 
 env:
   AWS_REGION: 'us-east-1'
-  S3_NAME: "mini-curso-devops-ecf"
+  S3_NAME: "minicurso-devops-ecf"
   S3_PREFIX: "/"
   AWS_WEB_IDENTITY_TOKEN_FILE: "/tmp/gitlab_token"
 
